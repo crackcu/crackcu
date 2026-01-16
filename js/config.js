@@ -15,7 +15,7 @@ const siteConfig = {
     
     // Contact Links - UPDATE THESE WITH YOUR ACTUAL LINKS
     contact: {
-        whatsapp: 'https://wa.me/8801234567890', // Replace with your WhatsApp number
+        whatsapp: 'https://wa.me/8801522132809', // Replace with your WhatsApp number
         facebook: 'https://facebook.com/crackcu', // Replace with your Facebook page
         youtube: 'https://youtube.com/@crackcu', // Replace with your YouTube channel
         telegram: 'https://t.me/crackcu', // Replace with your Telegram group
@@ -43,3 +43,4 @@ document.addEventListener('DOMContentLoaded', () => {
         footerLinks[3].href = siteConfig.contact.telegram;
     }
 });
+
