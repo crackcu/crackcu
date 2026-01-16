@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Bank | Crack-CU</title>
+    
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-brand">
+                <img src="assets/images/logo.png" alt="Crack-CU Logo" class="logo">
+                <span class="brand-name">Crack-CU</span>
+            </div>
+            
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="mock-tests.html" class="nav-link">Mock Tests</a></li>
+                <li><a href="study-materials.html" class="nav-link">Study Materials</a></li>
+                <li><a href="question-bank.html" class="nav-link active">Question Bank</a></li>
+                <li><a href="news-updates.html" class="nav-link">News & Updates</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>University of Chittagong Past Questions</h1>
+            <p>Download previous year question papers for effective preparation</p>
+        </div>
+    </section>
+
+    <!-- Question Bank Content -->
+    <section class="section">
+        <div class="container">
+            <div class="card-grid" id="questionBankGrid"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Crack-CU</h3>
+                    <p>Guided by Motiur Rahman Ahad & Team</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="mock-tests.html">Mock Tests</a></li>
+                        <li><a href="study-materials.html">Study Materials</a></li>
+                        <li><a href="question-bank.html">Question Bank</a></li>
+                        <li><a href="news-updates.html">News & Updates</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">WhatsApp</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">YouTube</a>
+                        <a href="#" class="social-link">Telegram</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Crack-CU. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/question-bank-data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Render question bank
+        document.getElementById('questionBankGrid').innerHTML = 
+            questionBankData.map(question => renderQuestionBankCard(question)).join('');
+    </script>
+</body>
+</html>
+
